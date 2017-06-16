@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Anodyne';
+  src: url('Anodyne.eot'); /* IE9 Compat Modes */
+  src: url('Anodyne.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Anodyne.woff') format('woff'), /* Modern Browsers */
+       url('Anodyne.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Anodyne.svg#a9b2ebda26ef7c07a044bdbc867dc0b3') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
