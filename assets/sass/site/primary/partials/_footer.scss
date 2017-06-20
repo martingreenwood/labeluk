@@ -1,0 +1,82 @@
+#twitter {
+	background-color: $brand-primary;
+	padding: 50px 0;
+	text-align: center;
+	color: white;
+
+	h2 {
+		margin: 0 0 25px 0;
+		font-size: 27px;
+	}
+
+	.tweets {
+
+		.tweet {
+
+			p {
+				color: white;
+				padding: 0 200px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+#colophon {
+	background-color: $brand-secondary;
+	padding: 50px 0;
+
+	.links {
+
+		h4 {
+			margin: 0 0 25px 0;
+			font-size: 27px;
+			text-transform: uppercase;
+			color: white;
+			line-height: 1.2;
+		}
+
+		p {
+			color: white;
+		}
+
+		ul {
+			margin: 0;
+			list-style: none;
+			
+			li {
+				color: white;
+				margin-bottom: 10px;
+
+				a {
+					color: $brand-primary;
+				}
+
+				.post-categories {
+					display: inline-block;
+					
+					li {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.site-info {
+		border-top: 1px solid white;
+		padding-top: 25px;
+		text-align: center;
+
+		p {
+			color: white;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

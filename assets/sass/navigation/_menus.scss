@@ -9,6 +9,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		padding-top: 0 !important;
 
 		ul {
 			float: left;
@@ -50,6 +51,7 @@
 	li {
 		float: left;
 		position: relative;
+		margin-right: 30px;
 
 		&:hover > a,
 		&.focus > a {
@@ -58,12 +60,17 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: #1b1b1b;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 10px 0
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
+		color: $brand-primary;
 	}
 }
 
@@ -73,14 +80,14 @@
 	display: block;
 }
 
-@include media ($medium-screen-up) {
+//@include media ($medium-screen-up) {
 	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
 		display: block;
 	}
-}
+	.main-navigation ul {
+		display: none;
+	}
+//}
 
 .comment-navigation,
 .posts-navigation,

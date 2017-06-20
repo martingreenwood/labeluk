@@ -1,6 +1,6 @@
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+$base-font-family: "proxima-nova", sans-serif;
+$heading-font-family: "proxima-nova", sans-serif;
 $font-pre: $monospace;
 $font-code: $font-pre;
 
@@ -20,8 +20,11 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$brand-primary: #477dca;
-$text-color: #878787;
+$brand-primary: #00dfd3;
+$brand-secondary: #384948;
+
+$text-color-dark: #282d2d;
+$text-color: #939393;
 $text-screen: $text-color;
 $text-input: $text-color;
 

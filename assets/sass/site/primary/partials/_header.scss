@@ -1,0 +1,105 @@
+#masthead {
+	padding: 40px 0 0 0;
+	position: fixed;
+	z-index: 1;
+	background: white;
+	width: 100%;
+	top: 0;
+
+	&.open {
+
+		.bottom {
+			border-top: 1px solid $brand-primary;
+		}
+	}
+
+	.menu {
+		padding-top: 27px;
+
+		button {
+			float: right;
+			margin-left: 20px;
+			text-transform: uppercase;
+			color: #676767;
+			font-weight: 900;
+			padding: 10px 15px;
+			line-height: 1.2;
+			border-radius: 0;
+			color: #1b1b1b;
+			border-color: $brand-primary;
+			outline: 0;
+			box-shadow: none;
+
+			&:hover, &:focus, &.open {
+				color: white;
+				outline: 0;
+				box-shadow: none;
+				background-color: $brand-primary;
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			float: right;
+			
+			li {
+				float: left;
+				margin: 0 0 0 10px;
+
+				a {
+					color: #1b1b1b;
+
+					i {
+						line-height: 41px;
+						font-size: 22px;
+					}
+				}
+				
+				button, .search-submit {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.search-form {
+		position: relative;
+
+		&:before {
+			content: "\f002";
+			font: normal normal normal 20px/1 FontAwesome;
+			position: absolute;
+			line-height: inherit;
+			line-height: 41px;
+			color: #1b1b1b;
+			right: 0;
+		}
+
+		label {
+			margin: 0;
+			width: 0;
+			overflow: hidden;
+			margin-right: 30px;
+		}
+
+		input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+			color: #939393;
+			border: 1px solid #ddd;
+			margin: 0;
+			box-sizing: border-box;
+			border-radius: 0;
+			box-shadow: none;
+			outline: 0;
+
+			&:active, &:focus, &:hover {
+				outline: 0;	
+				box-shadow: none;
+			}
+		}
+	}
+
+	.top {
+		padding-bottom: 10px;
+	}
+}

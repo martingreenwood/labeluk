@@ -17,14 +17,46 @@
 	}
 }
 
+.animated {
+	-webkit-animation-duration: 0.8s;
+	animation-duration: 0.8s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
 
+.fadeIn{
+	-webkit-animation-name:fadeIn;
+	animation-name:fadeIn
+}
 
-// Sticly Fix
-.sticky {
+.zoomInDown{
+	-webkit-animation-name:zoomInDown;
+	animation-name:zoomInDown;
+	animation-duration:1.4s
+}
 
-	#content {
-		//padding-top: 63px;
-	}
+.delay, .delay0 {
+	animation-delay: 0.2s;
+}
+
+.delay1 {
+	animation-delay: 0.25s;
+}
+
+.delay2 {
+	animation-delay: 0.3s;
+}
+
+.delay3 {
+	animation-delay: 0.35s;
+}
+
+.delay4 {
+	animation-delay: 0.4s;
+}
+
+.delay5 {
+	animation-delay: 0.45s;
 }
 
 // Table
@@ -42,5 +74,144 @@
 
 	&.middle {
 		vertical-align: middle;
+	}
+	&.bottom {
+		vertical-align: bottom;
+	}
+	&.top {
+		vertical-align: top;
+	}
+}
+
+
+.span1 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(1);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(1);
+	}
+}
+
+.span2 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(2.66);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(2);
+	}
+}
+
+.span3 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(2.66);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(3);
+	}
+}
+
+.span4 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(2.66);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(4);
+	}
+}
+
+.span5 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(4);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(5);
+	}
+}
+
+.span6 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(4);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(6);
+	}
+}
+
+.span7 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(4);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(7);
+	}
+}
+
+.span8 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(6.66);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(8);
+	}
+}
+
+.span9 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(9);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(9);
+	}
+}
+
+.span10 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(6.66);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(10);
+	}
+}
+
+.span12 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(8);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(12);
 	}
 }
