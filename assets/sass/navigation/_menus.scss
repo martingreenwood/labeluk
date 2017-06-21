@@ -51,7 +51,14 @@
 	li {
 		float: left;
 		position: relative;
-		margin-right: 30px;
+		width: 50%;
+		text-align: center;
+
+		@include media($large-screen-up) {
+			margin-right: 30px;
+			width: auto;
+			text-align: left;
+		}
 
 		&:hover > a,
 		&.focus > a {
@@ -80,14 +87,22 @@
 	display: block;
 }
 
-//@include media ($medium-screen-up) {
+.menu-toggle {
+	display: block;
+}
+.main-navigation ul {
+	display: none;
+}
+
+
+@include media ($large-screen-up) {
 	.menu-toggle {
-		display: block;
-	}
-	.main-navigation ul {
 		display: none;
 	}
-//}
+	.main-navigation ul {
+		display: block;
+	}
+}
 
 .comment-navigation,
 .posts-navigation,

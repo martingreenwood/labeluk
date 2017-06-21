@@ -625,7 +625,13 @@ a {
   .main-navigation li {
     float: left;
     position: relative;
-    margin-right: 30px; }
+    width: 50%;
+    text-align: center; }
+    @media screen and (min-width: 1024px) {
+      .main-navigation li {
+        margin-right: 30px;
+        width: auto;
+        text-align: left; } }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -649,6 +655,12 @@ a {
 
 .main-navigation ul {
   display: none; }
+
+@media screen and (min-width: 1024px) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -908,7 +920,7 @@ a {
       float: left;
       display: block;
       margin-right: 3.2258064516%;
-      width: 31.0967741935%; }
+      width: 35.4838709677%; }
       .span4:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
@@ -1004,7 +1016,7 @@ a {
       float: left;
       display: block;
       margin-right: 3.2258064516%;
-      width: 82.7096774194%; }
+      width: 61.2903225806%; }
       .span8:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 1024px) {
@@ -1101,6 +1113,9 @@ a {
   background: white;
   width: 100%;
   top: 0; }
+  @media screen and (min-width: 1024px) {
+    #masthead .bottom {
+      border-top: 1px solid #00dfd3; } }
   #masthead.open .bottom {
     border-top: 1px solid #00dfd3; }
   #masthead .menu {
@@ -1221,9 +1236,13 @@ a {
   #primary #main .side {
     padding: 50px 20px;
     background: #e3e3e3;
-    height: 100%;
-    position: absolute;
-    right: 20px; }
+    margin-bottom: 20px; }
+    @media screen and (min-width: 600px) {
+      #primary #main .side {
+        height: 100%;
+        position: absolute;
+        right: 20px;
+        margin-bottom: 0; } }
     #primary #main .side section {
       margin: 0 0 25px 0; }
     #primary #main .side h2, #primary #main .side h3 {

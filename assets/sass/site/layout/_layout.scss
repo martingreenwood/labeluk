@@ -124,7 +124,7 @@
 	@include span-columns(1);
 
 	@include media($medium-screen-up) {
-		@include span-columns(2.66);
+		@include span-columns(3);
 	}
 
 	@include media($large-screen-up) {
@@ -172,7 +172,7 @@
 	@include span-columns(1);
 
 	@include media($medium-screen-up) {
-		@include span-columns(6.66);
+		@include span-columns(5);
 	}
 
 	@include media($large-screen-up) {
